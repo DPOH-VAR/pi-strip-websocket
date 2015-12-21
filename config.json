@@ -1,0 +1,25 @@
+{
+  "port":4440,
+  "strips":{
+    "LED1":{
+      "type":"PWM",
+      "pins":[16,20,21],
+      "description":"Лента с РГБ не в одной точке."
+    },
+    "LED2":{
+      "type":"PWM",
+      "pins":[13,19,26],
+      "description":"ТРУ-РГБ лента."
+    },
+    "LED3":{
+      "type":"WS281X",
+      "length":32,
+      "description":"Адресная ленточка"
+    },
+	"LED4":{
+      "type":"PWM",
+      "pins":[25],
+      "description":"Белая (Жёлтая) лента."
+    }
+  }
+}

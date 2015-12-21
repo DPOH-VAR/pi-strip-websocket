@@ -1,0 +1,16 @@
+{
+  "name": "pi-strip-websocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "nodejs-websocket": "^1.4.1",
+    "rpi-ws281x-native": "^0.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dpohvar@gmail.com",
+  "license": "ISC"
+}
