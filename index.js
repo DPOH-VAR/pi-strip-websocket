@@ -6,7 +6,7 @@ var StripController = require("./strip-controller");
 
 var stripServices = Object.create(null);
 
-for (let stripName in config.strips) {
+for (var stripName in config.strips) {
   if (!config.strips.hasOwnProperty(stripName)) continue;
   stripServices[stripName] = new StripController(config.strips[stripName]);
 }
@@ -15,7 +15,7 @@ console.log(stripServices);
 
 var server = websocket.createServer(function(connection){
     
-  let stripName = connection.path.substring(1);
+  var stripName = connection.path.substring(1);
   if (!(stripName in stripServices)) {
     return connection.close(404,"No led service " +stripName);
   };
